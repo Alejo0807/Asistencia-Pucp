@@ -23,7 +23,6 @@ public class StudentAttendanceActivity extends AppCompatActivity {
         percent1 = super.findViewById(R.id.principal_lbl_asis1);
         percent2 = super.findViewById(R.id.principal_lbl_asis2);
         percent3 = super.findViewById(R.id.principal_lbl_asis3);
-
         showUserDetails();
     }
 

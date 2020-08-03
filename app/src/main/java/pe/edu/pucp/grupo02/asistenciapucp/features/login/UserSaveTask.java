@@ -43,7 +43,7 @@ public class UserSaveTask extends AsyncTask<Void, Void, Boolean> {
                 // Generar el hash de la contraseña
                 String hash = new SimplePBKDF2().deriveKeyFormatted(password);
                 // Guardar los datos del usuario en la base de datos
-                User user = new User(userId, userOutRO.getFullName(), userOutRO.getEmail(), username, hash);
+                User user = new User(userId, userOutRO.getFullName(), userOutRO.getEmail(), username, hash ,userOutRO.getServidorID(), userOutRO.getKeyAutorizacion(), userOutRO.getUsuarioAutorizacion(), userOutRO.getRolUsuario());
                 database.userDao().insert(user);
             } catch (Exception ex) {
                 ex.printStackTrace();

@@ -8,5 +8,5 @@ public interface ILoginPresenter extends IPresenter {
 
     void loginRest(String username, String password);
 
-    void loginOffline(String username, String password);
+    void loginOffline(String username, String password, String servidorId, String keyAutorizacion, String usuarioAutorizacion, String rolUsuario);
 }

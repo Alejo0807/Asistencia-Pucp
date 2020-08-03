@@ -102,9 +102,9 @@ public class LoginPresenter implements ILoginPresenter {
     }
 
     @Override
-    public void loginOffline(String username, String password) {
+    public void loginOffline(String username, String password, String servidorID, String keyAutorization, String usuarioAutorization, String rolUsuario ) {
         if (verifyLoginData(username, password)) {
-            new UserLoginTask(view, username, password).execute();
+            new UserLoginTask(view, username, password, servidorID, keyAutorization, usuarioAutorization, rolUsuario).execute();
         }
     }
 

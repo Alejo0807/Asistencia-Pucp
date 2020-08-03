@@ -77,4 +77,36 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/pucp3" />
 
+    <TextView
+        android:id="@+id/login_txt_servidorID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_txt_servidorID"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="552dp" />
+
+    <TextView
+        android:id="@+id/login_txt_keyAutorization"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_txt_keyAutorization"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="514dp" />
+
+    <TextView
+        android:id="@+id/login_txt_usuarioAutorization"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_txt_usuarioAutorization"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="592dp" />
+
+    <TextView
+        android:id="@+id/login_txt_rolUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:text="@string/login_txt_rolUsuario"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="645dp" />
+
 </android.support.constraint.ConstraintLayout>

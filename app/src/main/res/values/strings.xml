@@ -16,6 +16,10 @@
     <string name="login_dlg_error_title">Error al iniciar sesión</string>
     <string name="login_dlg_error_msg_not_found">No se pudo iniciar sesión. Asegúrese que haya escrito correctamente su nombre de usuario y contraseña.</string>
     <string name="teacher_messages_not_found">No se encontraron los datos.</string>
+    <string name="login_txt_servidorID"> </string>
+    <string name="login_txt_keyAutorization"> </string>
+    <string name="login_txt_usuarioAutorization"> </string>
+    <string name="login_txt_rolUsuario"> </string>
 
 
     <!-- Pantalla de bienvenida -->

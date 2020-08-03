@@ -23,12 +23,28 @@ public class User {
     @ColumnInfo(name = "HASH")
     private String hash;
 
-    public User(int userId, String fullName, String email, String username, String hash) {
+    @ColumnInfo(name = "SERVIDOR_ID")
+    private String servidorID;
+
+    @ColumnInfo(name = "KEY_AUTORIZACION")
+    private String keyAutorizacion;
+
+    @ColumnInfo(name = "USUARIO_AUTORIZACION")
+    private String usuarioAutorizacion;
+
+    @ColumnInfo(name = "ROL_USUARIO")
+    private String rolUsuario;
+
+    public User(int userId, String fullName, String email, String username, String hash, String servidorID, String keyAutorizacion, String usuarioAutorizacion, String rolUsuario) {
         this.userId = userId;
         this.fullName = fullName;
         this.email = email;
         this.username = username;
         this.hash = hash;
+        this.servidorID = servidorID;
+        this.keyAutorizacion = keyAutorizacion;
+        this.usuarioAutorizacion = usuarioAutorizacion;
+        this.rolUsuario = rolUsuario;
     }
 
     public int getUserId() {
@@ -51,4 +67,19 @@ public class User {
         return hash;
     }
 
+    public String getServidorID() {
+        return servidorID;
+    }
+
+    public String getKeyAutorizacion() {
+        return keyAutorizacion;
+    }
+
+    public String getUsuarioAutorizacion() {
+        return usuarioAutorizacion;
+    }
+
+    public String getRolUsuario() {
+        return rolUsuario;
+    }
 }

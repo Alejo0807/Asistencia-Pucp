@@ -17,11 +17,19 @@ public class UserLoginTask extends AsyncTask<Void, Void, User> {
     private WeakReference<ILoginView> view;
     private String username;
     private String password;
+    private String servidorID;
+    private String keyAutorization;
+    private String ususarioAutorization;
+    private String rolUsuario;
 
-    protected UserLoginTask(ILoginView view, String username, String password) {
+    protected UserLoginTask(ILoginView view, String username, String password, String servidorID, String keyAutorization, String ususarioAutorization, String rolUsuario ) {
         this.view = new WeakReference<>(view);
         this.username = username;
         this.password = password;
+        this.servidorID = servidorID;
+        this.keyAutorization = keyAutorization;
+        this.ususarioAutorization = ususarioAutorization;
+        this.rolUsuario = rolUsuario;
     }
 
     @Override
